@@ -40,12 +40,36 @@ button{
     border-radius: 10px;
     cursor: pointer;
 }
-main{
-    display: flex;
-    justify-content: center;
-}
 
 img{
     max-width: 100%;
 }
 
+.container{
+    min-width: 1000px;
+    height: 100vh;
+}
+/* visibility actions */
+.hidden{
+    display: none;
+}
+.invisible{
+    display: none !important;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    margin: 0 auto;
+
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
