@@ -10,6 +10,44 @@
 <body>
     <!-- HEADER: contains logo, navigation menu, cart, and user avatar -->
     <header>
+        <div class="container">
+            <!-- navbar -->
+             <nav>
+                <div class="nav-container">
+                    <div class="nav-left">
+                        <img class="hidden menu" src="image/icon-menu.svg" alt="menu">
+                        <img class="nav-logo" src="image/logo.svg" alt="logo">
+                        <div class="overlay">
+                            <ul class="nav-links">
+                              <img class="close-btn" src="image/icon-close.svg" alt="close">
+                              <li class="nav-link">Collections</li>
+                              <li class="nav-link">Men</li>
+                              <li class="nav-link">Women</li>
+                              <li class="nav-link">About</li>
+                              <li class="nav-link">Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <!-- cart -->
+                        <div class="cart-container">
+                            <button class="cart-btn">
+                              <span class="indicator"></span>
+                              <img class="cart" src="image/icon-cart.svg" alt="cart">
+                            </button>
+                            <div class="cart-invisible">
+                                <p class="cart-heading">Cart</p>
+                                <div class="divider"></div>
+                                <div class="cart-content-empty">
+                                    <p>Your cart is empty</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/image-avatar.png" alt="avatar">
+                    </div>
+                </div>
+             </nav>
+        </div>
 
     </header>
     <!-- MAIN: contains the product images and product information -->
