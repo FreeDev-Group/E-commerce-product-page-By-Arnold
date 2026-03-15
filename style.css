@@ -106,3 +106,28 @@ nav{
     align-items: center;
     gap: 1.8rem;
 }
+.avatar, .cart{
+    margin: 1rem 0;
+    width: 50px;
+}
+.avatar:hover{
+    outline: 2px solid var(--orange);
+    border-radius: 50%;
+}
+.cart:hover{
+    filter: brightness(0%);
+}
+.cart-btn{
+    background-color: transparent;
+    border: none;
+    width: 60px;
+}
+.indicator{
+    right: -10px;
+    top: -15px;
+    position: absolute;
+    padding: 0.2rem 9.5rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--orange);
+}
