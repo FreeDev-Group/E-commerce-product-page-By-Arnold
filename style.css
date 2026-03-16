@@ -180,4 +180,38 @@ header{
 }
 
 
+.delete-btn{
+    background-color: transparent;
+    border:none;
+    width: 16px;
+    cursor: pointer;
+}
+.checkout-btn{
+    background-color: var(--orange);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    cursor: pointer;
+}
 
+main{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 1.2rem;
+}
+.product-images{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.main-thumbnail{
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
