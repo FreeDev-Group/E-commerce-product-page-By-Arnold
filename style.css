@@ -399,3 +399,33 @@ body.nav-open .nav-links{
 body.nav-open .nav-link::after{
   content: none;
 }
+
+@media (min-width: 768px){
+  main{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .product-infos{
+    margin-left: 50px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .nav-links{
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .overlay{
+    display: none !important;
+  }
+
+  .cart-wrp{
+    left: auto;
+    right: 0;
+  }
+}
