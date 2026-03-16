@@ -429,3 +429,52 @@ body.nav-open .nav-link::after{
     right: 0;
   }
 }
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Masquer les liens par défaut */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 70%; /* largeur du menu */
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 4rem;
+    gap:2rem;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.8);
+    transition: left 0.9s ease; /* animation de glissement */
+  }
+
+  /* Overlay pour fond sombre */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  /* Quand le menu est ouvert */
+  body.nav-open .nav-links {
+    left: 0; /* menu visible à l’écran */
+  }
+
+  body.nav-open .overlay {
+    display: block; /* overlay visible */
+  }
+
+  /* Les liens dans le menu vertical */
+  .nav-links .nav-link {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+
