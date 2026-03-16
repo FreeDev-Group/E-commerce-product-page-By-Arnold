@@ -329,3 +329,73 @@ main{
 .amount{
     font-weight: 700;
 }
+.add-btn{
+    cursor: pointer;
+    width: 60%;
+    margin-left: 1rem;
+    background-color: var(--orange);
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.add-btn:hover{
+    opacity: 70%;
+}
+.add-btn img{
+    filter: var(--black);
+}
+
+/* Mobile first */
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+/* Mobile nav overlay */
+.overlay{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+body.nav-open .overlay{
+  display: block;
+}
+
+.menu{
+  display: block;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.nav-links{
+  display: none;
+}
+
+body.nav-open .nav-links{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.5rem;
+  background: var(--white);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  z-index: 20;
+}
+
+body.nav-open .nav-link::after{
+  content: none;
+}
