@@ -215,3 +215,27 @@ main{
     width: 100%;
     cursor: pointer;
 }
+.main-thumbnail:hover{
+    opacity: 80%;
+}
+.preview{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.preview img{
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.preview img:hover{
+   opacity: 50%;
+   border: 2px solid var(--orange);
+}
+.selected{
+    border: 2px solid var(--orange);
+    opacity: 70%;
+}
+.content{
+    margin-left: 2.8rem;
+}
