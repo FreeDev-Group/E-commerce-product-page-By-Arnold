@@ -314,3 +314,25 @@ main{
 .amount{
     font-weight: 700;
 }
+.add-btn{
+    cursor: pointer;
+    width: 60%;
+    margin-left: 1rem;
+    background-color: var(--orange);
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.add-btn:hover{
+    opacity: 70%;
+}
+.add-btn img{
+    filter: var(--black);
+}
