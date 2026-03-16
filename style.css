@@ -478,3 +478,15 @@ body.nav-open .nav-link::after{
   }
 }
 
+
+@media (max-width: 768px) {
+  .preview {
+    justify-content: space-between; /* espace entre les images */
+    gap: 0.5rem;                    /* petit gap */
+  }
+  
+  .preview img {
+    width: 22%;   /* légèrement plus grand sur mobile */
+    max-width: none;
+  }
+}
