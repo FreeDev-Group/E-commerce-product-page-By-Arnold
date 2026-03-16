@@ -1,94 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="image/favicon-32x32.png">
     <title>E-commerce-product-page</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
     <!-- HEADER: contains logo, navigation menu, cart, and user avatar -->
     <header>
-        <div class="container">
-            <!-- navbar -->
-             <nav>
-                <div class="nav-container">
-                    <div class="nav-left">
-                        <img class="hidden menu" src="image/icon-menu.svg" alt="menu">
-                        <img class="nav-logo" src="image/logo.svg" alt="logo">
-                        <div class="overlay">
-                            <ul class="nav-links">
-                              <img class="close-btn" src="image/icon-close.svg" alt="close">
-                              <li class="nav-link">Collections</li>
-                              <li class="nav-link">Men</li>
-                              <li class="nav-link">Women</li>
-                              <li class="nav-link">About</li>
-                              <li class="nav-link">Contact</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="nav-right">
-                        <!-- cart -->
-                        <div class="cart-container">
-                            <button class="cart-btn">
-                              <span class="indicator"></span>
-                              <img class="cart" src="image/icon-cart.svg" alt="cart">
-                            </button>
-                            <div class="cart-invisible">
-                                <p class="cart-heading">Cart</p>
-                                <div class="divider"></div>
-                                <div class="cart-content-empty">
-                                    <p>Your cart is empty</p>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="image/image-avatar.png" alt="avatar">
+        <div class="header-container">
+            <div class="header-left">
+                <img class="hidden menu" src="image/icon-menu.svg" alt="menu">
+                <img class="nav-logo" src="image/logo.svg" alt="logo">
+                <div class="overlay"></div>
+                <ul class="nav-links">
+                  <li class="nav-link">Collection</li>
+                  <li class="nav-link">Man</li>
+                  <li class="nav-link">Woman</li>
+                  <li class="nav-link">About</li>
+                  <li class="nav-link">Contact</li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="cart-container">
+                    <button class="cart-btn">
+                        <span class="indicator"></span>
+                        <img class="cart" src="image/icon-cart.svg" alt="cart">
+                    </button>
+                    <div class="cart-wrp invisible">
+                      <p class="cart-heading">Cart</p>
+                      <div class="divider"></div>
+                      <div class="cart-content empty">
+                        <p>Your cart is empty</p>
+                      </div>
                     </div>
                 </div>
-             </nav>
+                <img class="avatar" src="image/image-avatar.png" alt="avatar">
+            </div>
         </div>
-
     </header>
-
 
     <!-- MAIN: contains the product images and product information -->
     <main>
-        <!-- SECTION: Product Images -->
+      <!-- SECTION: Product Images -->
       <section class="product-images">
         <!-- Main product image and thumbnails go here -->
          <img class="main-thumbnail" src="image/image-product-1.jpg" alt="product">
-         <div class="mobile-thumb-hidden">
-            <img class="thumb-mob" src="image/image-product-1.jpg" alt="product">
-            <button id="next"><img src="image/icon-next.svg" alt="next"></button>
-            <button id="previous"><img src="image/icon-previous.svg" alt="previous"></button>
+         <div class="mobile-thumb hidden">
+           <img class="thumb-mob" src="image/image-product-1.jpg" alt="product">
+           <button id="next"><img src="image/icon-next.svg" alt="next"></button>
+           <button id="previous"><img src="image/icon-previous.svg" alt="previous"></button>
          </div>
-
          <div>
             <div class="preview">
                 <img class="selected" src="image/image-product-1-thumbnail.jpg" alt="product">
-                <img  src="image/image-product-2-thumbnail.jpg" alt="product">
+                <img src="image/image-product-2-thumbnail.jpg" alt="product">
                 <img src="image/image-product-3-thumbnail.jpg" alt="product">
                 <img src="image/image-product-4-thumbnail.jpg" alt="product">
             </div>
          </div>
-
       </section>
+
+      
       <!-- SECTION: Product Information -->
-      <section class="product-info">
+     <section class="product-infos">
         <!-- Product title, description, price, discount, quantity selector, add-to-cart button go here -->
-        <p class="company">Sneaker Company</p>
+        <p class="campany">Sneaker Company</p>
         <h1 class="title">Fall Limited Edition Sneakers</h1>
-        <p class="info">These low-profile sneakers are your 
-            perfect casual wear companion. Featuring a durable
-             rubber outer sole, they'll withstand everything the weather can offer.
+        <p class="info">
+            These low-profile sneakers are your 
+            perfect casual wear companion. Featuring
+             a durable rubber outer sole, they'll 
+             withstand everything the weather can offer.
         </p>
         <div class="price">
-            <div class="new">
+            <div class="new-price">
                 <p class="now">$125.00</p>
                 <span>50%</span>
             </div>
-            <p class="old">$250.00</p>
+            <p class="old-price">$250.00</p>
         </div>
         <div class="buttons">
             <div class="amount-btn">
@@ -97,15 +90,29 @@
                 </button>
                 <p class="amount">0</p>
                 <button id="plus">
-                    <img src="image/icon-plus.svg" alt="plus">
+                    <img src="image/icon-plus.svg" alt="">
                 </button>
             </div>
             <button class="add-btn">
                 <img src="image/icon-cart.svg" alt="cart">
-                add to cart
+                Add to cart
             </button>
         </div>
       </section>
     </main>
+   </div>
+   <div class="lightbox invisible">
+     <div class="lightbox-container">
+        <button class="close-lightbox"><img src="image/icon-close.svg" alt="close"></button>
+        <img class="main-thumbnail invisible-mob" src="image/image-product-1.jpg" alt="product">
+        <div class="preview">
+            <img class="selected" src="image/image-product-1-thumbnail.jpg" alt="product">
+            <img src="image/image-product-2-thumbnail.jpg" alt="product">
+            <img src="image/image-product-3-thumbnail.jpg" alt="product">
+            <img src="image/image-product-4-thumbnail.jpg" alt="product">
+        </div>
+     </div>
+   </div>
+   <script src="script.js"></script>
 </body>
 </html>
